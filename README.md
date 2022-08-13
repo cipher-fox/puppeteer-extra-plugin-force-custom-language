@@ -49,15 +49,18 @@ puppeteer.launch({ headless: true }).then(async browser => {
 
 - [language](#language)
 - [ip](#ip)
-- [httpHeaders](#httpHeaders)
-- [geoLocation](#geoLocation)
+- [httpHeaders](#httpheaders)
+- [geoLocation](#geolocation)
 - [javascript](#javascript)
 
 ## language
 **TYPE**: string
+
 **DEFAULT**: en
+
 **DESCRIPTION**: Language code to use.
 (Available options: [en,  zh,  ru,  fr,  es,  de,  pt,  it,  ja])
+
 **USAGE**: 
 ```javascript
 const puppeteer =  require('puppeteer-extra')
@@ -67,8 +70,11 @@ puppeteer.use(ForceCustomLanguagePlugin({language: 'es'}))
 ---
 ## ip
 **TYPE**: boolean
+
 **DEFAULT**: true
+
 **DESCRIPTION**: Send a fake ip as origin via HTTP headers.
+
 **USAGE**: 
 ```javascript
 const puppeteer =  require('puppeteer-extra')
@@ -78,8 +84,11 @@ puppeteer.use(ForceCustomLanguagePlugin({ip: true}))
 ---
 ## httpHeaders
 **TYPE**: boolean
+
 **DEFAULT**: true
+
 **DESCRIPTION**: Send a custom `Accept-Language` HTTP header.
+
 **USAGE**: 
 ```javascript
 const puppeteer =  require('puppeteer-extra')
@@ -89,8 +98,11 @@ puppeteer.use(ForceCustomLanguagePlugin({httpHeaders: true}))
 ---
 ## geoLocation
 **TYPE**: boolean
+
 **DEFAULT**: true
+
 **DESCRIPTION**: Send a custom geographic coordinates.
+
 **USAGE**: 
 ```javascript
 const puppeteer =  require('puppeteer-extra')
@@ -100,8 +112,11 @@ puppeteer.use(ForceCustomLanguagePlugin({geoLocation: true}))
 ---
 ## javascript
 **TYPE**: boolean
+
 **DEFAULT**: true
+
 **DESCRIPTION**: Set a custom `navigator.language` & `navigator.languages` javascript getters.
+
 **USAGE**: 
 ```javascript
 const puppeteer =  require('puppeteer-extra')
