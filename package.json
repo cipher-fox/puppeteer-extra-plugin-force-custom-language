@@ -1,0 +1,44 @@
+{
+  "name": "@thewolfx41/puppeteer-extra-plugin-force-custom-language",
+  "repository": "",
+  "version": "1.0.0",
+  "description": "Force browser language.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "thewolfx41",
+  "scripts": {
+    "docs": "node -e 0",
+    "lint": "eslint --ext .js ."
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "puppeteer",
+    "puppeteer-extra",
+    "puppeteer-extra-plugin",
+    "chrome",
+    "headless",
+    "pupeteer"
+  ],
+  "dependencies": {
+    "puppeteer-extra-plugin": "^3.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "puppeteer": "*",
+    "puppeteer-extra": "*"
+  },
+  "peerDependencies": {
+    "playwright-extra": "*",
+    "puppeteer-extra": "*"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer-extra": {
+      "optional": true
+    },
+    "playwright-extra": {
+      "optional": true
+    }
+  }
+}
