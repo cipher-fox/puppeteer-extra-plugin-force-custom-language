@@ -2,7 +2,7 @@
   "name": "puppeteer-extra-plugin-force-custom-language",
   "repository": "github:mjorgegulab/puppeteer-extra-plugin-force-custom-language",
   "homepage": "https://github.com/mjorgegulab/puppeteer-extra-plugin-force-custom-language/#readme",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Force browser language.",
   "main": "index.js",
   "license": "MIT",

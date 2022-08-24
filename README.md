@@ -7,17 +7,17 @@
 ## Install
 
 ```bash
-yarn add @thewolfx41/puppeteer-extra-plugin-force-custom-language
+yarn add puppeteer-extra-plugin-force-custom-language
 # - or -
-npm install @thewolfx41/puppeteer-extra-plugin-force-custom-language
+npm install puppeteer-extra-plugin-force-custom-language
 ```
 
 If this is your first [puppeteer-extra](https://github.com/berstend/puppeteer-extra) plugin here's everything you need:
 
 ```bash
-yarn add puppeteer puppeteer-extra @thewolfx41/puppeteer-extra-plugin-force-custom-language
+yarn add puppeteer puppeteer-extra puppeteer-extra-plugin-force-custom-language
 # - or -
-npm install puppeteer puppeteer-extra @thewolfx41/puppeteer-extra-plugin-force-custom-language
+npm install puppeteer puppeteer-extra puppeteer-extra-plugin-force-custom-language
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm install puppeteer puppeteer-extra @thewolfx41/puppeteer-extra-plugin-force-c
 const puppeteer = require('puppeteer-extra')
 
 // add force language plugin and use defaults (all techniques)
-const ForceCustomLanguagePlugin = require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin = require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin())
 
 // puppeteer usage as normal
@@ -65,7 +65,7 @@ puppeteer.launch({ headless: true }).then(async browser => {
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({language: 'es'})) 
 ```
 ---
@@ -79,7 +79,7 @@ puppeteer.use(ForceCustomLanguagePlugin({language: 'es'}))
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({ip: true})) 
 ```
 ---
@@ -93,7 +93,7 @@ puppeteer.use(ForceCustomLanguagePlugin({ip: true}))
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({httpHeaders: true})) 
 ```
 ---
@@ -107,7 +107,7 @@ puppeteer.use(ForceCustomLanguagePlugin({httpHeaders: true}))
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({geoLocation: true})) 
 ```
 ---
@@ -121,7 +121,7 @@ puppeteer.use(ForceCustomLanguagePlugin({geoLocation: true}))
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({javascript: true})) 
 ```
 ---
@@ -135,7 +135,7 @@ puppeteer.use(ForceCustomLanguagePlugin({javascript: true}))
 **USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
-const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({requestInterceptionPriority: 0})) 
 ```
 
