@@ -52,6 +52,7 @@ puppeteer.launch({ headless: true }).then(async browser => {
 - [httpHeaders](#httpheaders)
 - [geoLocation](#geolocation)
 - [javascript](#javascript)
+- [requestInterceptionPriority](#requestinterceptionpriority)
 
 ## language
 **TYPE**: string
@@ -61,7 +62,7 @@ puppeteer.launch({ headless: true }).then(async browser => {
 **DESCRIPTION**: Language code to use.
 (Available options: [en,  zh,  ru,  fr,  es,  de,  pt,  it,  ja])
 
-**USAGE**: 
+**USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
@@ -75,7 +76,7 @@ puppeteer.use(ForceCustomLanguagePlugin({language: 'es'}))
 
 **DESCRIPTION**: Send a fake ip as origin via HTTP headers.
 
-**USAGE**: 
+**USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
@@ -89,7 +90,7 @@ puppeteer.use(ForceCustomLanguagePlugin({ip: true}))
 
 **DESCRIPTION**: Send a custom `Accept-Language` HTTP header.
 
-**USAGE**: 
+**USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
@@ -103,7 +104,7 @@ puppeteer.use(ForceCustomLanguagePlugin({httpHeaders: true}))
 
 **DESCRIPTION**: Send a custom geographic coordinates.
 
-**USAGE**: 
+**USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
@@ -117,13 +118,26 @@ puppeteer.use(ForceCustomLanguagePlugin({geoLocation: true}))
 
 **DESCRIPTION**: Set a custom `navigator.language` & `navigator.languages` javascript getters.
 
-**USAGE**: 
+**USAGE**:
 ```javascript
 const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({javascript: true})) 
 ```
+---
+## requestInterceptionPriority
+**TYPE**: number
 
+**DEFAULT**: -1
+
+**DESCRIPTION**: Set the request interceptor priority. [See this](https://pptr.dev/guides/request-interception)
+
+**USAGE**:
+```javascript
+const puppeteer =  require('puppeteer-extra')
+const ForceCustomLanguagePlugin =  require('@thewolfx41/puppeteer-extra-plugin-force-custom-language')
+puppeteer.use(ForceCustomLanguagePlugin({requestInterceptionPriority: 0})) 
+```
 
 ---
 ## Contributing

@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer-extra');
 const ForceCustomLanguagePlugin = require('./index.js');
 
 (async () => {
-  puppeteer.use(ForceCustomLanguagePlugin({language: 'ru', ip: true, javascript: true, geoLocation: true, httpHeaders: true}));
+  puppeteer.use(ForceCustomLanguagePlugin({language: 'ru', ip: true, javascript: true, geoLocation: true, httpHeaders: true, requestInterceptionPriority: -1}));
   const browser = await puppeteer.launch({headless: false, args: ['--lang="en_EN"'],  env: {LANG: 'en_EN.UTF-8'}});
   const page = await browser.newPage();
   await page.goto('https://www.infobyip.com/browsergeolocation.php');

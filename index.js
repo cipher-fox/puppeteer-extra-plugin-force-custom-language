@@ -25,7 +25,8 @@ const { PuppeteerExtraPlugin } = require('puppeteer-extra-plugin');
  * 		ip: true,
  * 		javascript: true,
  * 		geoLocation: true,
- * 		httpHeaders: true})
+ * 		httpHeaders: true,
+ *		requestInterceptionPriority: -1})
  * )
  * const browser = await puppeteer.launch()
  *
@@ -48,7 +49,8 @@ class ForceCustomLanguagePlugin extends PuppeteerExtraPlugin {
 			ip: true,
 			httpHeaders: true,
 			geoLocation: true,
-			javascript: true
+			javascript: true,
+			requestInterceptionPriority: -1
 		}
 	}
 
@@ -75,12 +77,13 @@ class ForceCustomLanguagePlugin extends PuppeteerExtraPlugin {
 
 		if (this.opts.httpHeaders) {
 			await page.setRequestInterception(true);
-			page.on('request', (req) => {
-				const headerOverride = req.headers();
+			page.on('request', (interceptedRequest) => {
+				if (interceptedRequest.isInterceptResolutionHandled()) return;
+				const headerOverride = interceptedRequest.headers();
 				headerOverride['Accept-Language'] = `${this._locale.locale},${this._locale.languageCode}`;
-				req.continue({
+				interceptedRequest.continue({
 					headers: headerOverride,
-				});
+				}, this.opts.requestInterceptionPriority);
 			});
 		}
 
