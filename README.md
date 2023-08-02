@@ -1,5 +1,5 @@
 # puppeteer-extra-plugin-force-custom-language
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/85eb01da28934d37a91d5a2c78897355)](https://app.codacy.com/gh/mjorgegulab/puppeteer-extra-plugin-force-custom-language/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/85eb01da28934d37a91d5a2c78897355)](https://app.codacy.com/gh/mjorgegulab/puppeteer-extra-plugin-force-custom-language/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![CodeQL](https://github.com/mjorgegulab/puppeteer-extra-plugin-force-custom-language/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/mjorgegulab/puppeteer-extra-plugin-force-custom-language/actions/workflows/github-code-scanning/codeql)
 > A plugin for [puppeteer-extra](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra) and [playwright-extra](https://github.com/berstend/puppeteer-extra/tree/master/packages/playwright-extra) to force browser language.
 
 <p align="center"><img src="https://i.imgur.com/e1IeCjp.png" /></p>
