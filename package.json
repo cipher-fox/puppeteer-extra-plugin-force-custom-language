@@ -26,7 +26,8 @@
     "puppeteer-extra-plugin": "^3.2.3"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
+    "axios": "^1.4.0",
+    "eslint": "^8.47.0",
     "puppeteer": "*",
     "puppeteer-extra": "*"
   },
