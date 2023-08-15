@@ -2,14 +2,16 @@ module.exports = {
     LOCALES: {
         'en': {
             language: 'english',
+            countryCode: 'gb',
             languageCode: 'en',
-            locale: 'en-US',
-            latitude: 38,
-            longitude: -97,
-            ip: '149.80.0.5'
+            locale: 'en-GB',
+            latitude: 51.50,
+            longitude: -0.12,
+            ip: '101.36.96.1'
         },
         'zh': {
             language: 'chinese',
+            countryCode: 'cn',
             languageCode: 'zh',
             locale: 'zh-CN',
             latitude: 35,
@@ -18,6 +20,7 @@ module.exports = {
         },
         'ru': {
             language: 'russian',
+            countryCode: 'ru',
             languageCode: 'ru',
             locale: 'ru-RU',
             latitude: 60,
@@ -26,6 +29,7 @@ module.exports = {
         },
         'fr': {
             language: 'french',
+            countryCode: 'fr',
             languageCode: 'fr',
             locale: 'fr-FR',
             latitude: 46,
@@ -34,6 +38,7 @@ module.exports = {
         },
         'es': {
             language: 'spanish',
+            countryCode: 'es',
             languageCode: 'es',
             locale: 'es-ES',
             latitude: 40,
@@ -42,6 +47,7 @@ module.exports = {
         },
         'de': {
             language: 'german',
+            countryCode: 'de',
             languageCode: 'de',
             locale: 'de-DE',
             latitude: 51,
@@ -50,6 +56,7 @@ module.exports = {
         },
         'pt': {
             language: 'portuguese',
+            countryCode: 'pt',
             languageCode: 'pt',
             locale: 'pt-PT',
             latitude: 39.5,
@@ -58,6 +65,7 @@ module.exports = {
         },
         'it': {
             language: 'ttalian',
+            countryCode: 'it',
             languageCode: 'it',
             locale: 'it-IT',
             latitude: 42.8333,
@@ -66,6 +74,7 @@ module.exports = {
         },
         'ja': {
             language: 'japanese',
+            countryCode: 'jp',
             languageCode: 'ja',
             locale: 'ja-JP',
             latitude: 36,
