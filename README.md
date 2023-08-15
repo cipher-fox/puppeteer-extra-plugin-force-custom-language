@@ -47,12 +47,20 @@ puppeteer.launch({ headless: true }).then(async browser => {
 
 #### Table of Contents
 
-- [language](#language)
-- [ip](#ip)
-- [httpHeaders](#httpheaders)
-- [geoLocation](#geolocation)
-- [javascript](#javascript)
-- [requestInterceptionPriority](#requestinterceptionpriority)
+- [puppeteer-extra-plugin-force-custom-language](#puppeteer-extra-plugin-force-custom-language)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Plugin options](#plugin-options)
+      - [Table of Contents](#table-of-contents)
+  - [language](#language)
+  - [ip](#ip)
+  - [httpHeaders](#httpheaders)
+  - [geoLocation](#geolocation)
+  - [javascript](#javascript)
+  - [requestInterceptionPriority](#requestinterceptionpriority)
+  - [Tools](#tools)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## language
 **TYPE**: string
@@ -138,6 +146,12 @@ const puppeteer =  require('puppeteer-extra')
 const ForceCustomLanguagePlugin =  require('puppeteer-extra-plugin-force-custom-language')
 puppeteer.use(ForceCustomLanguagePlugin({requestInterceptionPriority: 0})) 
 ```
+
+## Tools
+
+1. **Check IP Assignment** ([tools/checkIPs.js](tools/checkIPs.js))
+  _with this tool you can check if the ip addresses found in the local.json file are still assigned to their corresponding country. ⬇️_
+  <img src="https://i.imgur.com/dGw4kll.png" width="250"/>
 
 ---
 ## Contributing
