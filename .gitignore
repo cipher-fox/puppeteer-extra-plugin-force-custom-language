@@ -130,3 +130,19 @@ dist
 .pnp.*
 
 .idea/
+
+test-results.jpeg
+
+test_01_airbnb.png
+
+test_01_browserleaks.png
+
+test_01_geolocation.png
+
+test_02_airbnb.jpeg
+
+test_02_facebook.jpeg
+
+test_02_google.jpeg
+
+*.jpeg
