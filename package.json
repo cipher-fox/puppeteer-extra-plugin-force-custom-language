@@ -2,7 +2,7 @@
   "name": "puppeteer-extra-plugin-force-custom-language",
   "repository": "github:mjorgegulab/puppeteer-extra-plugin-force-custom-language",
   "homepage": "https://github.com/mjorgegulab/puppeteer-extra-plugin-force-custom-language/#readme",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Force browser language.",
   "main": "index.js",
   "types": "index.d.ts",
