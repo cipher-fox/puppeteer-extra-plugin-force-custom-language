@@ -1,13 +1,13 @@
 {
   "name": "puppeteer-extra-plugin-force-custom-language",
-  "repository": "github:mjorgegulab/puppeteer-extra-plugin-force-custom-language",
-  "homepage": "https://github.com/mjorgegulab/puppeteer-extra-plugin-force-custom-language/#readme",
-  "version": "2.1.6",
+  "repository": "github:cipher-fox/puppeteer-extra-plugin-force-custom-language",
+  "homepage": "https://github.com/cipher-fox/puppeteer-extra-plugin-force-custom-language/#readme",
+  "version": "2.1.7",
   "description": "Force browser language.",
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
-  "author": "thewolfx41",
+  "author": "cipher-fox",
   "scripts": {
     "docs": "node -e 0",
     "lint": "eslint --ext .js ."
