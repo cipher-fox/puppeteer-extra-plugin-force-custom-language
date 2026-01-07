@@ -30,7 +30,7 @@ const { PuppeteerExtraPlugin } = require('puppeteer-extra-plugin');
  * )
  * const browser = await puppeteer.launch()
  *
- * @author thewolfx41 <me@andsec.ch>
+ * @author Marc Jorge <me@cypher-fox.com>
  * @version 1.0.0
  */
 class ForceCustomLanguagePlugin extends PuppeteerExtraPlugin {
