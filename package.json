@@ -27,10 +27,10 @@
     "puppeteer-extra-plugin": "^3.2.3"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.52.0",
-    "axios": "^1.13.2",
-    "eslint": "^9.39.2",
-    "puppeteer": "^24.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.61.1",
+    "axios": "^1.18.0",
+    "eslint": "^8.57.1",
+    "puppeteer": "^25.2.0",
     "puppeteer-extra": "*"
   },
   "peerDependencies": {
